@@ -6236,17 +6236,32 @@ target triple = "x86_64-unknown-linux-android"
 
 
 ; module25_managed_to_java
-@module25_managed_to_java = internal constant [1 x %struct.TypeMapModuleEntry] [
+@module25_managed_to_java = internal constant [2 x %struct.TypeMapModuleEntry] [
+	; 0
+	%struct.TypeMapModuleEntry {
+		i32 33554447, ; type_token_id
+		i32 181; java_map_index
+	}, 
+	; 1
+	%struct.TypeMapModuleEntry {
+		i32 33554448, ; type_token_id
+		i32 26; java_map_index
+	}
+], align 16; end of 'module25_managed_to_java' array
+
+
+; module26_managed_to_java
+@module26_managed_to_java = internal constant [1 x %struct.TypeMapModuleEntry] [
 	; 0
 	%struct.TypeMapModuleEntry {
 		i32 33554434, ; type_token_id
 		i32 187; java_map_index
 	}
-], align 4; end of 'module25_managed_to_java' array
+], align 4; end of 'module26_managed_to_java' array
 
 
-; module26_managed_to_java
-@module26_managed_to_java = internal constant [2 x %struct.TypeMapModuleEntry] [
+; module27_managed_to_java
+@module27_managed_to_java = internal constant [2 x %struct.TypeMapModuleEntry] [
 	; 0
 	%struct.TypeMapModuleEntry {
 		i32 33554440, ; type_token_id
@@ -6256,21 +6271,6 @@ target triple = "x86_64-unknown-linux-android"
 	%struct.TypeMapModuleEntry {
 		i32 33554441, ; type_token_id
 		i32 163; java_map_index
-	}
-], align 16; end of 'module26_managed_to_java' array
-
-
-; module27_managed_to_java
-@module27_managed_to_java = internal constant [2 x %struct.TypeMapModuleEntry] [
-	; 0
-	%struct.TypeMapModuleEntry {
-		i32 33554446, ; type_token_id
-		i32 181; java_map_index
-	}, 
-	; 1
-	%struct.TypeMapModuleEntry {
-		i32 33554447, ; type_token_id
-		i32 26; java_map_index
 	}
 ], align 16; end of 'module27_managed_to_java' array
 
@@ -6850,9 +6850,9 @@ target triple = "x86_64-unknown-linux-android"
 @__TypeMapModule_assembly_name.22 = internal constant [41 x i8] c"Xamarin.AndroidX.Lifecycle.LiveData.Core\00", align 16
 @__TypeMapModule_assembly_name.23 = internal constant [24 x i8] c"Microsoft.Maui.Controls\00", align 16
 @__TypeMapModule_assembly_name.24 = internal constant [37 x i8] c"Xamarin.AndroidX.Lifecycle.ViewModel\00", align 16
-@__TypeMapModule_assembly_name.25 = internal constant [47 x i8] c"Xamarin.AndroidX.Lifecycle.ViewModelSavedState\00", align 16
-@__TypeMapModule_assembly_name.26 = internal constant [46 x i8] c"Xamarin.AndroidX.AppCompat.AppCompatResources\00", align 16
-@__TypeMapModule_assembly_name.27 = internal constant [13 x i8] c"SocialCredit\00", align 1
+@__TypeMapModule_assembly_name.25 = internal constant [13 x i8] c"SocialCredit\00", align 1
+@__TypeMapModule_assembly_name.26 = internal constant [47 x i8] c"Xamarin.AndroidX.Lifecycle.ViewModelSavedState\00", align 16
+@__TypeMapModule_assembly_name.27 = internal constant [46 x i8] c"Xamarin.AndroidX.AppCompat.AppCompatResources\00", align 16
 @__TypeMapModule_assembly_name.28 = internal constant [28 x i8] c"Xamarin.AndroidX.ViewPager2\00", align 16
 @__TypeMapModule_assembly_name.29 = internal constant [26 x i8] c"Xamarin.AndroidX.CardView\00", align 16
 @__TypeMapModule_assembly_name.30 = internal constant [28 x i8] c"Xamarin.AndroidX.CustomView\00", align 16
@@ -7166,36 +7166,36 @@ target triple = "x86_64-unknown-linux-android"
 	}, 
 	; 25
 	%struct.TypeMapModule {
-		[16 x i8] c"\86d\C8)D\DD\E3N\B0gc\98\E1\DA\8A+", ; module_uuid: 29c86486-dd44-4ee3-b067-6398e1da8a2b
-		i32 1, ; entry_count
+		[16 x i8] c"\85\8D\12-\FF\12\93O\99^\E6\AC\8C\E8\80\F9", ; module_uuid: 2d128d85-12ff-4f93-995e-e6ac8ce880f9
+		i32 2, ; entry_count
 		i32 0, ; duplicate_count
-		%struct.TypeMapModuleEntry* getelementptr inbounds ([1 x %struct.TypeMapModuleEntry], [1 x %struct.TypeMapModuleEntry]* @module25_managed_to_java, i32 0, i32 0), ; map
+		%struct.TypeMapModuleEntry* getelementptr inbounds ([2 x %struct.TypeMapModuleEntry], [2 x %struct.TypeMapModuleEntry]* @module25_managed_to_java, i32 0, i32 0), ; map
 		%struct.TypeMapModuleEntry* null, ; duplicate_map
-		i8* getelementptr inbounds ([47 x i8], [47 x i8]* @__TypeMapModule_assembly_name.25, i32 0, i32 0), ; assembly_name: Xamarin.AndroidX.Lifecycle.ViewModelSavedState
+		i8* getelementptr inbounds ([13 x i8], [13 x i8]* @__TypeMapModule_assembly_name.25, i32 0, i32 0), ; assembly_name: SocialCredit
 		%struct.MonoImage* null, ; image
 		i32 0, ; java_name_width
 		i8* null; java_map
 	}, 
 	; 26
 	%struct.TypeMapModule {
-		[16 x i8] c"\93!\89+>QHM\96\FFn\09$m\12+", ; module_uuid: 2b892193-513e-4d48-96ff-6e09246d122b
-		i32 2, ; entry_count
+		[16 x i8] c"\86d\C8)D\DD\E3N\B0gc\98\E1\DA\8A+", ; module_uuid: 29c86486-dd44-4ee3-b067-6398e1da8a2b
+		i32 1, ; entry_count
 		i32 0, ; duplicate_count
-		%struct.TypeMapModuleEntry* getelementptr inbounds ([2 x %struct.TypeMapModuleEntry], [2 x %struct.TypeMapModuleEntry]* @module26_managed_to_java, i32 0, i32 0), ; map
+		%struct.TypeMapModuleEntry* getelementptr inbounds ([1 x %struct.TypeMapModuleEntry], [1 x %struct.TypeMapModuleEntry]* @module26_managed_to_java, i32 0, i32 0), ; map
 		%struct.TypeMapModuleEntry* null, ; duplicate_map
-		i8* getelementptr inbounds ([46 x i8], [46 x i8]* @__TypeMapModule_assembly_name.26, i32 0, i32 0), ; assembly_name: Xamarin.AndroidX.AppCompat.AppCompatResources
+		i8* getelementptr inbounds ([47 x i8], [47 x i8]* @__TypeMapModule_assembly_name.26, i32 0, i32 0), ; assembly_name: Xamarin.AndroidX.Lifecycle.ViewModelSavedState
 		%struct.MonoImage* null, ; image
 		i32 0, ; java_name_width
 		i8* null; java_map
 	}, 
 	; 27
 	%struct.TypeMapModule {
-		[16 x i8] c"\B1\ACD\0C\0F\10\E0E\94\9C\1F\CEj\84\F6\C0", ; module_uuid: 0c44acb1-100f-45e0-949c-1fce6a84f6c0
+		[16 x i8] c"\93!\89+>QHM\96\FFn\09$m\12+", ; module_uuid: 2b892193-513e-4d48-96ff-6e09246d122b
 		i32 2, ; entry_count
 		i32 0, ; duplicate_count
 		%struct.TypeMapModuleEntry* getelementptr inbounds ([2 x %struct.TypeMapModuleEntry], [2 x %struct.TypeMapModuleEntry]* @module27_managed_to_java, i32 0, i32 0), ; map
 		%struct.TypeMapModuleEntry* null, ; duplicate_map
-		i8* getelementptr inbounds ([13 x i8], [13 x i8]* @__TypeMapModule_assembly_name.27, i32 0, i32 0), ; assembly_name: SocialCredit
+		i8* getelementptr inbounds ([46 x i8], [46 x i8]* @__TypeMapModule_assembly_name.27, i32 0, i32 0), ; assembly_name: Xamarin.AndroidX.AppCompat.AppCompatResources
 		%struct.MonoImage* null, ; image
 		i32 0, ; java_name_width
 		i8* null; java_map
@@ -7461,9 +7461,9 @@ target triple = "x86_64-unknown-linux-android"
 	}, 
 	; 26
 	%struct.TypeMapJava {
-		i32 27, ; module_index
-		i32 33554447, ; type_token_id
-		i32 888; java_name_index
+		i32 25, ; module_index
+		i32 33554448, ; type_token_id
+		i32 885; java_name_index
 	}, 
 	; 27
 	%struct.TypeMapJava {
@@ -8283,9 +8283,9 @@ target triple = "x86_64-unknown-linux-android"
 	}, 
 	; 163
 	%struct.TypeMapJava {
-		i32 26, ; module_index
+		i32 27, ; module_index
 		i32 33554441, ; type_token_id
-		i32 886; java_name_index
+		i32 888; java_name_index
 	}, 
 	; 164
 	%struct.TypeMapJava {
@@ -8391,9 +8391,9 @@ target triple = "x86_64-unknown-linux-android"
 	}, 
 	; 181
 	%struct.TypeMapJava {
-		i32 27, ; module_index
-		i32 33554446, ; type_token_id
-		i32 887; java_name_index
+		i32 25, ; module_index
+		i32 33554447, ; type_token_id
+		i32 884; java_name_index
 	}, 
 	; 182
 	%struct.TypeMapJava {
@@ -8427,9 +8427,9 @@ target triple = "x86_64-unknown-linux-android"
 	}, 
 	; 187
 	%struct.TypeMapJava {
-		i32 25, ; module_index
+		i32 26, ; module_index
 		i32 33554434, ; type_token_id
-		i32 884; java_name_index
+		i32 886; java_name_index
 	}, 
 	; 188
 	%struct.TypeMapJava {
@@ -12435,9 +12435,9 @@ target triple = "x86_64-unknown-linux-android"
 	}, 
 	; 855
 	%struct.TypeMapJava {
-		i32 26, ; module_index
+		i32 27, ; module_index
 		i32 33554440, ; type_token_id
-		i32 885; java_name_index
+		i32 887; java_name_index
 	}, 
 	; 856
 	%struct.TypeMapJava {
@@ -14997,11 +14997,11 @@ target triple = "x86_64-unknown-linux-android"
 @__java_type_names.881 = internal constant [34 x i8] c"androidx/lifecycle/ViewModelStore\00", align 16
 @__java_type_names.882 = internal constant [44 x i8] c"androidx/lifecycle/viewmodel/CreationExtras\00", align 16
 @__java_type_names.883 = internal constant [48 x i8] c"androidx/lifecycle/viewmodel/CreationExtras$Key\00", align 16
-@__java_type_names.884 = internal constant [36 x i8] c"androidx/lifecycle/SavedStateHandle\00", align 16
-@__java_type_names.885 = internal constant [53 x i8] c"androidx/appcompat/graphics/drawable/DrawableWrapper\00", align 16
-@__java_type_names.886 = internal constant [50 x i8] c"androidx/appcompat/content/res/AppCompatResources\00", align 16
-@__java_type_names.887 = internal constant [35 x i8] c"crc64ea6b8175936de011/MainActivity\00", align 16
-@__java_type_names.888 = internal constant [38 x i8] c"crc64ea6b8175936de011/MainApplication\00", align 16
+@__java_type_names.884 = internal constant [35 x i8] c"crc64ea6b8175936de011/MainActivity\00", align 16
+@__java_type_names.885 = internal constant [38 x i8] c"crc64ea6b8175936de011/MainApplication\00", align 16
+@__java_type_names.886 = internal constant [36 x i8] c"androidx/lifecycle/SavedStateHandle\00", align 16
+@__java_type_names.887 = internal constant [53 x i8] c"androidx/appcompat/graphics/drawable/DrawableWrapper\00", align 16
+@__java_type_names.888 = internal constant [50 x i8] c"androidx/appcompat/content/res/AppCompatResources\00", align 16
 @__java_type_names.889 = internal constant [38 x i8] c"androidx/viewpager2/widget/ViewPager2\00", align 16
 @__java_type_names.890 = internal constant [59 x i8] c"androidx/viewpager2/widget/ViewPager2$OnPageChangeCallback\00", align 16
 @__java_type_names.891 = internal constant [54 x i8] c"androidx/viewpager2/widget/ViewPager2$PageTransformer\00", align 16
@@ -15971,11 +15971,11 @@ target triple = "x86_64-unknown-linux-android"
 	i8* getelementptr inbounds ([34 x i8], [34 x i8]* @__java_type_names.881, i32 0, i32 0),
 	i8* getelementptr inbounds ([44 x i8], [44 x i8]* @__java_type_names.882, i32 0, i32 0),
 	i8* getelementptr inbounds ([48 x i8], [48 x i8]* @__java_type_names.883, i32 0, i32 0),
-	i8* getelementptr inbounds ([36 x i8], [36 x i8]* @__java_type_names.884, i32 0, i32 0),
-	i8* getelementptr inbounds ([53 x i8], [53 x i8]* @__java_type_names.885, i32 0, i32 0),
-	i8* getelementptr inbounds ([50 x i8], [50 x i8]* @__java_type_names.886, i32 0, i32 0),
-	i8* getelementptr inbounds ([35 x i8], [35 x i8]* @__java_type_names.887, i32 0, i32 0),
-	i8* getelementptr inbounds ([38 x i8], [38 x i8]* @__java_type_names.888, i32 0, i32 0),
+	i8* getelementptr inbounds ([35 x i8], [35 x i8]* @__java_type_names.884, i32 0, i32 0),
+	i8* getelementptr inbounds ([38 x i8], [38 x i8]* @__java_type_names.885, i32 0, i32 0),
+	i8* getelementptr inbounds ([36 x i8], [36 x i8]* @__java_type_names.886, i32 0, i32 0),
+	i8* getelementptr inbounds ([53 x i8], [53 x i8]* @__java_type_names.887, i32 0, i32 0),
+	i8* getelementptr inbounds ([50 x i8], [50 x i8]* @__java_type_names.888, i32 0, i32 0),
 	i8* getelementptr inbounds ([38 x i8], [38 x i8]* @__java_type_names.889, i32 0, i32 0),
 	i8* getelementptr inbounds ([59 x i8], [59 x i8]* @__java_type_names.890, i32 0, i32 0),
 	i8* getelementptr inbounds ([54 x i8], [54 x i8]* @__java_type_names.891, i32 0, i32 0),

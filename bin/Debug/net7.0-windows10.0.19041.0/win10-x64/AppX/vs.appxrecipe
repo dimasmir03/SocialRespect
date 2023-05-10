@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Machine>HOME-PC</Machine>
-    <WindowsUser>DImasmir</WindowsUser>
+    <WindowsUser>Dimasmir</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -29,25 +29,25 @@
     <AppXManifest Include="D:\Work\C#\SocialCredit\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-13T22:49:36.641</Modified>
+      <Modified>2023-05-02T20:06:44.669</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Work\C#\SocialCredit\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-04-13T22:49:35.984</Modified>
+      <Modified>2023-05-02T20:06:43.983</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Work\C#\SocialCredit\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SocialCredit.runtimeconfig.json">
       <PackagePath>SocialCredit.runtimeconfig.json</PackagePath>
-      <Modified>2023-04-10T19:37:09.880</Modified>
+      <Modified>2023-05-01T18:40:29.789</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Work\C#\SocialCredit\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SocialCredit.dll">
       <PackagePath>SocialCredit.dll</PackagePath>
-      <Modified>2023-04-13T22:49:34.532</Modified>
+      <Modified>2023-05-02T20:06:42.718</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Work\C#\SocialCredit\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>SocialCredit.exe</PackagePath>
-      <Modified>2023-04-13T22:49:34.583</Modified>
+      <Modified>2023-05-02T20:06:42.746</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DImasmir\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -919,7 +919,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Work\C#\SocialCredit\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\SocialCredit.deps.json">
       <PackagePath>SocialCredit.deps.json</PackagePath>
-      <Modified>2023-04-13T22:49:36.489</Modified>
+      <Modified>2023-05-02T20:06:44.504</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.59\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
